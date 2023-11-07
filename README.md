@@ -102,8 +102,12 @@ These are open to the public and may be used by anyone. There may or not be some
 These are only accessible by authorized external developers to aid business-to-business partnerships.
 
 ## 4.What are the difference between SOAP and REST?
-- SOAP and REST are two internet data exchange mechanisms. For example, imagine that your internal accounts system shares data with your customer's accounting system to automate invoicing tasks. The two applications share data by using an API that defines communication rules. 
-- [SOAP and REST are two different approaches to API design. The SOAP approach is highly structured and uses XML data format. REST is more flexible and allows applications to exchange data in multiple formats.] 
+| SOAP API| REST API |
+| ----- | --- |
+| Relies on SOAP (Simple Object Access Protocol) | Relies on REST (Representational State Transfer) architecture using HTTP. |
+| Transports data in standard XML format. | Generally transports data in JSON. It is based on URI. Because REST follows stateless model, REST does not enforces message format as XML or JSON etc. |
+| Because it is XML based and relies on SOAP, it works with WSDL|	It works with GET, POST, PUT, DELETE | 
+Works over HTTP, HTTPS, SMTP, XMPP	| Works over HTTP and HTTPS | 
 
 ## 5.Methods in Soap and Rest
 ## 6.What is Webservice
