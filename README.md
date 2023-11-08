@@ -1,4 +1,4 @@
-## API Endpoints
+## CRUD Operations/Methods Using REST Principles
 
 ### 1. Register User(POST)
 
