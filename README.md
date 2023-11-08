@@ -1,4 +1,4 @@
-## CRUD Operations Using REST API Principles
+## API Endpoints
 
 ### 1. Register User(POST)
 
@@ -46,7 +46,6 @@
         {
             "Error":"Data Not found"
         }
-
 ## 3. Update User Details(PUT)
 
 - **Endpoint**: `/user?id=123`
@@ -88,7 +87,6 @@
         {
           "error": "data Not Found"
         }        
-
 ## 1.What is an API? and Benefits of API?
 APIs are mechanisms that enable two software components to communicate with each other using a set of definitions and protocols. For example, the weather bureau’s software system contains daily weather data. The weather app on your phone “talks” to this system via APIs and shows you daily weather updates on your phone.
 
@@ -150,3 +148,53 @@ REST APIs offer four main benefits:
 2. Ease of Maintenance
 3. Expansion
 
+## What is a WSDL?
+WSDL, or Web Service Description Language, is an XML based definition language. It’s used for describing the functionality of a SOAP based web service.
+
+WSDL files are central to testing SOAP-based services. SoapUI uses WSDL files to generate test requests, assertions and mock services. WSDL files define various aspects of SOAP messages:
+
+- Whether any element or attribute is allowed to appear multiple times
+- The required or optional elements and attributes
+- A specific order of elements, if it is required
+
+You may consider a WSDL file as a contract between the provider and the consumer of the service. SoapUI supports 1.1 version of the WSDL specification and corresponding bindings for SOAP versions 1.1 and 1.2.
+
+
+
+#### To take a closer look at a WSDL file,import a sample WSDL file:
+#### Let's start by opening the project.
+
+##### 1. Click Import button on the main toolbar or right-click the root node in the Navigator panel and select Import Project:
+ ![Alt Text](https://static1.smartbear.co/soapui/media/images/stories/getting_started/import_sample_soapui_project_new.png)
+ 
+ #####  2. In the Select ReadyAPIject File dialog, select the Sample-SOAP-Project-soapui-project.xml file from the <Home directory>/SoapUI-Tutorials folder.
+ 
+ ![Alt Text](https://www.soapui.org/getmedia/08f5ecae-98c3-4826-a361-cfcfde3d770e/Selecting_sample_project_new)
+ 
+ ##### 3. The sample project will be shown in the SoapUI Navigator.
+ ![Alt Text](https://static1.smartbear.co/soapui/media/images/stories/getting_started/soapui_sample_project_loaded_new.png)
+ 
+ ##### The structure of a ReadyAPIject is like this:
+- Project
+  - Interface
+  - Test suites
+  - Mock services
+ 
+## Web Service Inspection
+### Introduction
+###### Web service inspection can be very helpful at an early stage of the testing process when you want to find out how a web service works. You can do this in two ways: by inspecting the web service’s WSDL file and by making web service requests.
+
+##### Tutorial:
+1. Double-click the ServiceSoapBinding node to open the interface editor.
+2. Open the WSDL Content tab. A WSDL file is an XML file, and it may be difficult to view and understand it. However, a WSDL file is a specification of a web service, and the better you understand it, the better you can work with the service. The SoapUI interface helps you view your WSDL file:
+![Alt Text](https://static1.smartbear.co/soapui/media/images/stories/getting_started/wsdl-inspection-in-soapui.png)
+
+#### Let's move on to web service requests:
+
+###### 1. Expand the login node in the Navigator panel and double-click the login rq request. The request already contains the username and password.
+###### 2. Click ![Alt Text](https://static1.smartbear.co/soapui/media/images/icon/run.png) button to submit the request.
+###### You should now see the response in the Response panel:
+![Alt Text](https://static1.smartbear.co/soapui/media/images/stories/getting_started/test_request_new.png)
+
+
+ 
